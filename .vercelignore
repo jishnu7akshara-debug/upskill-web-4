@@ -1,0 +1,8 @@
+# Keep the deployment purely static. A root server.js or package.json makes
+# Vercel treat the project as a Node app and every page then returns 404.
+server.js
+package.json
+package-lock.json
+node_modules
+README.md
+.git

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VECTR — Applied Tech Academy, Indiranagar, Bengaluru</title>
+  <meta name="description" content="VECTR is an applied tech academy in Indiranagar, Bengaluru. Intensive programs in Full-Stack Engineering, AI Engineering, Cybersecurity, Cloud, Data and XR — built in labs, not lecture halls." />
+  <meta name="theme-color" content="#0B0B0C" />
+  <meta property="og:title" content="VECTR — Skills that ship" />
+  <meta property="og:description" content="Intensive, lab-first tech programs with industry mentors and hiring partners." />
+  <meta property="og:image" content="assets/img/hero.jpg" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="assets/img/hero.jpg" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="is-loading">
+
+  <!-- ===== LOADER: boot log + block grid ===== -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__grid" id="loaderGrid"></div>
+    <div class="loader__hud">
+      <div class="loader__log" id="loaderLog"></div>
+      <div class="loader__meta"><span>VECTR/OS v4.0</span><span>12.9716°N 77.6412°E</span></div>
+      <div class="loader__pct"><span id="loaderPct">000</span><small>%</small></div>
+      <div class="loader__bar"><span id="loaderBar"></span></div>
+    </div>
+  </div>
+
+  <!-- wireframe column guides -->
+  <div class="guides" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+
+  <!-- crosshair cursor -->
+  <div class="xhair" id="xhair" aria-hidden="true"><span class="xhair__h"></span><span class="xhair__v"></span><span class="xhair__box"></span><span class="xhair__label" id="xhairLabel">X 000 / Y 000</span></div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="hdr" id="hdr">
+    <a href="#top" class="hdr__logo" aria-label="VECTR home"><span class="mark">V/</span>VECTR</a>
+    <nav class="hdr__nav" aria-label="Primary">
+      <a href="#programs" data-glitch="Programs">Programs</a>
+      <a href="#curriculum" data-glitch="Curriculum">Curriculum</a>
+      <a href="#lab" data-glitch="The Lab">The Lab</a>
+      <a href="#outcomes" data-glitch="Outcomes">Outcomes</a>
+      <a href="#faq" data-glitch="FAQ">FAQ</a>
+    </nav>
+    <div class="hdr__status"><span class="blip"></span> Intake 01/27 · <b>38</b> seats left</div>
+    <a href="#apply" class="hdr__cta">Apply <span>↗</span></a>
+    <button class="hdr__burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+  <div class="menu" id="menu">
+    <a href="#programs"><small>01</small>Programs</a>
+    <a href="#curriculum"><small>02</small>Curriculum</a>
+    <a href="#lab"><small>03</small>The Lab</a>
+    <a href="#outcomes"><small>04</small>Outcomes</a>
+    <a href="#faq"><small>05</small>FAQ</a>
+    <a href="#apply" class="menu__cta">Apply for 01/27 →</a>
+  </div>
+
+  <main id="top">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="hero__grid">
+        <div class="hero__copy">
+          <div class="tagrow"><span class="tag">[ APPLIED TECH ACADEMY ]</span><span class="tag tag--dim">INDIRANAGAR · BLR</span></div>
+          <h1 class="hero__title">
+            <span class="ln"><span>Skills</span></span>
+            <span class="ln"><span class="outline">that</span></span>
+            <span class="ln"><span>ship<em>.</em></span></span>
+          </h1>
+          <p class="hero__lead reveal">Intensive 16–24 week programs in engineering, AI and security. You train in a working lab, ship to production every sprint, and graduate with code recruiters can actually run.</p>
+          <div class="hero__ctas reveal">
+            <a href="#apply" class="btn btn--signal">Start your application <span>→</span></a>
+            <a href="#programs" class="btn btn--line">Browse programs</a>
+          </div>
+        </div>
+        <div class="hero__media">
+          <figure class="cut spot shutter" data-label="FIG.01 — PAIR SESSION">
+            <img src="assets/img/hero.jpg" alt="Two developers pair-programming on a laptop" class="spot__base" width="1600" height="1067" />
+            <img src="assets/img/hero.jpg" alt="" class="spot__color" aria-hidden="true" />
+          </figure>
+          <div class="hero__readout reveal">
+            <div><small>NEXT INTAKE</small><b>12.01.2027</b></div>
+            <div><small>FORMAT</small><b>ON-SITE + LIVE</b></div>
+            <div><small>BATCH</small><b>MAX 24</b></div>
+          </div>
+        </div>
+      </div>
+      <div class="strip">
+        <div class="cell reveal"><span class="cell__k">[01] ALUMNI</span><span class="cell__v"><span data-count="1460">1,460</span>+</span></div>
+        <div class="cell reveal"><span class="cell__k">[02] HIRING PARTNERS</span><span class="cell__v"><span data-count="140">140</span></span></div>
+        <div class="cell reveal"><span class="cell__k">[03] MEDIAN CTC*</span><span class="cell__v">₹<span data-count="7.2" data-dec="1">7.2</span>L</span></div>
+        <div class="cell reveal"><span class="cell__k">[04] LAB HOURS / WK</span><span class="cell__v"><span data-count="32">32</span>h</span></div>
+      </div>
+    </section>
+
+    <!-- ===== KINETIC TYPE ===== -->
+    <section class="kinetic" aria-hidden="true">
+      <div class="kinetic__row" data-dir="-1"><span>BUILD</span><i>/</i><span class="o">BREAK</span><i>/</i><span>DEBUG</span><i>/</i><span class="o">DEPLOY</span><i>/</i><span>BUILD</span><i>/</i><span class="o">BREAK</span><i>/</i><span>DEBUG</span></div>
+      <div class="kinetic__row" data-dir="1"><span class="o">REPEAT</span><i>/</i><span>UNTIL</span><i>/</i><span class="o">IT</span><i>/</i><span>WORKS</span><i>/</i><span class="o">REPEAT</span><i>/</i><span>UNTIL</span><i>/</i><span class="o">IT</span></div>
+    </section>
+
+    <!-- ===== PROGRAMS ===== -->
+    <section class="sec programs" id="programs">
+      <div class="sec__head">
+        <span class="sec__idx">§01</span>
+        <h2>Programs<br /><span class="outline">built for</span> industry.</h2>
+        <p class="sec__note">Six intensive tracks. Every one ends with a production capstone reviewed by a hiring partner.</p>
+      </div>
+      <div class="pgrid">
+        <article class="pcard">
+          <div class="pcard__img cut-sm shutter spot"><img src="assets/img/prog-fullstack.jpg" alt="Developer at a workstation with a laptop" class="spot__base" loading="lazy" /><img src="assets/img/prog-fullstack.jpg" alt="" class="spot__color" aria-hidden="true" loading="lazy" /></div>
+          <div class="pcard__top"><span>P-01</span><span>24 WK · ON-SITE</span></div>
+          <h3>Full-Stack Engineering</h3>
+          <p>TypeScript, React, Node, PostgreSQL, testing and CI/CD. Ship a multi-tenant SaaS as your capstone.</p>
+          <div class="pcard__foot"><b>₹1,25,000</b><a href="#apply">Syllabus ↗</a></div>
+        </article>
+        <article class="pcard">
+          <div class="pcard__img cut-sm shutter spot"><img src="assets/img/prog-ai.jpg" alt="Smiling learner at a hackathon" class="spot__base" loading="lazy" /><img src="assets/img/prog-ai.jpg" alt="" class="spot__color" aria-hidden="true" loading="lazy" /></div>
+          <div class="pcard__top"><span>P-02</span><span>20 WK · HYBRID</span></div>
+          <h3>AI Engineering</h3>
+          <p>Python, ML foundations, LLM apps, RAG, evals and MLOps — deployed, monitored, measured.</p>
+          <div class="pcard__foot"><b>₹1,35,000</b><a href="#apply">Syllabus ↗</a></div>
+        </article>
+        <article class="pcard">
+          <div class="pcard__img cut-sm shutter spot"><img src="assets/img/prog-cyber.jpg" alt="Close-up of a networked server rack" class="spot__base" loading="lazy" /><img src="assets/img/prog-cyber.jpg" alt="" class="spot__color" aria-hidden="true" loading="lazy" /></div>
+          <div class="pcard__top"><span>P-03</span><span>20 WK · ON-SITE</span></div>
+          <h3>Cybersecurity Ops</h3>
+          <p>Networking, Linux hardening, offensive labs, SIEM and incident response on a live range.</p>
+          <div class="pcard__foot"><b>₹1,15,000</b><a href="#apply">Syllabus ↗</a></div>
+        </article>
+        <article class="pcard">
+          <div class="pcard__img cut-sm shutter spot"><img src="assets/img/prog-cloud.jpg" alt="Corridor of server racks in a data centre" class="spot__base" loading="lazy" /><img src="assets/img/prog-cloud.jpg" alt="" class="spot__color" aria-hidden="true" loading="lazy" /></div>
+          <div class="pcard__top"><span>P-04</span><span>18 WK · LIVE</span></div>
+          <h3>Cloud &amp; SRE</h3>
+          <p>AWS, Terraform, Kubernetes, observability and on-call drills with real failure scenarios.</p>
+          <div class="pcard__foot"><b>₹1,05,000</b><a href="#apply">Syllabus ↗</a></div>
+        </article>
+        <article class="pcard">
+          <div class="pcard__img cut-sm shutter spot"><img src="assets/img/prog-data.jpg" alt="Learner at a hackathon in Pune" class="spot__base" loading="lazy" /><img src="assets/img/prog-data.jpg" alt="" class="spot__color" aria-hidden="true" loading="lazy" /></div>
+          <div class="pcard__top"><span>P-05</span><span>16 WK · WEEKEND</span></div>
+          <h3>Data Engineering</h3>
+          <p>SQL, Python, dbt, Airflow and warehouse design — pipelines that feed real dashboards.</p>
+          <div class="pcard__foot"><b>₹85,000</b><a href="#apply">Syllabus ↗</a></div>
+        </article>
+        <article class="pcard">
+          <div class="pcard__img cut-sm shutter spot"><img src="assets/img/prog-xr.jpg" alt="Learner using a virtual reality headset" class="spot__base" loading="lazy" /><img src="assets/img/prog-xr.jpg" alt="" class="spot__color" aria-hidden="true" loading="lazy" /></div>
+          <div class="pcard__top"><span>P-06</span><span>16 WK · ON-SITE</span></div>
+          <h3>XR &amp; Creative Tech</h3>
+          <p>Unity, 3D, spatial interaction and rapid prototyping in our hardware &amp; makerspace lab.</p>
+          <div class="pcard__foot"><b>₹95,000</b><a href="#apply">Syllabus ↗</a></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== VIEWFINDER VIDEO ===== -->
+    <section class="viewfinder" id="vf">
+      <div class="vf__frame" id="vfFrame">
+        <video muted loop playsinline preload="none" poster="assets/img/lab-3.jpg" data-lazy aria-label="Footage-style cut of the VECTR lab">
+          <source data-src="assets/video/vectr-cut.webm" type="video/webm" />
+          <source data-src="assets/video/vectr-cut.mp4" type="video/mp4" />
+        </video>
+        <div class="vf__scan" aria-hidden="true"></div>
+        <span class="vf__c tl"></span><span class="vf__c tr"></span><span class="vf__c bl"></span><span class="vf__c br"></span>
+        <div class="vf__hud vf__hud--top"><span class="rec"><i></i>REC</span><span id="vfTime">00:00:00:00</span></div>
+        <div class="vf__hud vf__hud--bot"><span>CAM 02 · LAB FLOOR</span><span>ISO 800 · 24FPS</span></div>
+        <h2 class="vf__title">No lectures.<br /><span class="outline">Only labs.</span></h2>
+      </div>
+    </section>
+
+    <!-- ===== CURRICULUM TABS ===== -->
+    <section class="sec curriculum" id="curriculum">
+      <div class="sec__head">
+        <span class="sec__idx">§02</span>
+        <h2>Inside the<br /><span class="outline">curriculum.</span></h2>
+        <p class="sec__note">Pick a track to see how the weeks break down. Every module ends in a graded build.</p>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Choose a track">
+        <button role="tab" aria-selected="true" data-tab="fs">Full-Stack</button>
+        <button role="tab" aria-selected="false" data-tab="ai">AI Engineering</button>
+        <button role="tab" aria-selected="false" data-tab="sec">Cybersecurity</button>
+        <span class="tabs__ink" id="tabInk"></span>
+      </div>
+      <div class="modules" id="modules" aria-live="polite"></div>
+    </section>
+
+    <!-- ===== LAB: broken grid ===== -->
+    <section class="sec lab" id="lab">
+      <div class="sec__head">
+        <span class="sec__idx">§03</span>
+        <h2>The lab is<br /><span class="outline">the classroom.</span></h2>
+        <p class="sec__note">6,000 sq ft in Indiranagar: dev floor, hardware bench, makerspace, XR bay and a server room you're allowed to break.</p>
+      </div>
+      <div class="bgrid">
+        <figure class="bg bg--1 shutter spot" data-speed="24"><img src="assets/img/lab-1.jpg" alt="Large hall of developers working at round tables" class="spot__base" loading="lazy" /><img src="assets/img/lab-1.jpg" alt="" class="spot__color" aria-hidden="true" loading="lazy" /><figcaption>FIG.02 — HACK HALL</figcaption></figure>
+        <figure class="bg bg--2 shutter spot" data-speed="-14"><img src="assets/img/lab-2.jpg" alt="Row of 3D printers in a makerspace" class="spot__base" loading="lazy" /><img src="assets/img/lab-2.jpg" alt="" class="spot__color" aria-hidden="true" loading="lazy" /><figcaption>FIG.03 — MAKERSPACE</figcaption></figure>
+        <figure class="bg bg--3 shutter spot" data-speed="30"><img src="assets/img/lab-3.jpg" alt="Server racks in a machine room" class="spot__base" loading="lazy" /><img src="assets/img/lab-3.jpg" alt="" class="spot__color" aria-hidden="true" loading="lazy" /><figcaption>FIG.04 — SERVER ROOM</figcaption></figure>
+        <figure class="bg bg--4 shutter spot" data-speed="-10"><img src="assets/img/lab-4.jpg" alt="Bright makerspace with workbenches" class="spot__base" loading="lazy" /><img src="assets/img/lab-4.jpg" alt="" class="spot__color" aria-hidden="true" loading="lazy" /><figcaption>FIG.05 — HARDWARE BENCH</figcaption></figure>
+        <figure class="bg bg--5 shutter spot" data-speed="18"><img src="assets/img/lab-5.jpg" alt="Participant filming a project demo at a hackathon" class="spot__base" loading="lazy" /><img src="assets/img/lab-5.jpg" alt="" class="spot__color" aria-hidden="true" loading="lazy" /><figcaption>FIG.06 — DEMO DAY</figcaption></figure>
+        <div class="bg bg--note">
+          <span class="tag">[ LAB ACCESS ]</span>
+          <p><b>24 × 7</b> for enrolled learners, with mentors on the floor 10:00–22:00.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== OUTCOMES ===== -->
+    <section class="sec outcomes" id="outcomes">
+      <div class="sec__head">
+        <span class="sec__idx">§04</span>
+        <h2>Where<br /><span class="outline">graduates</span> land.</h2>
+        <p class="sec__note">Roles from the last three cohorts*. Our career desk runs mock loops, referrals and offer negotiation.</p>
+      </div>
+      <div class="out">
+        <div class="bars">
+          <div class="bar"><span class="bar__k">Software / Full-Stack Engineer</span><span class="bar__t"><span style="--w:42%"></span></span><span class="bar__v">42%</span></div>
+          <div class="bar"><span class="bar__k">AI / ML Engineer</span><span class="bar__t"><span style="--w:21%"></span></span><span class="bar__v">21%</span></div>
+          <div class="bar"><span class="bar__k">Security Analyst / SOC</span><span class="bar__t"><span style="--w:14%"></span></span><span class="bar__v">14%</span></div>
+          <div class="bar"><span class="bar__k">Cloud / DevOps / SRE</span><span class="bar__t"><span style="--w:13%"></span></span><span class="bar__v">13%</span></div>
+          <div class="bar"><span class="bar__k">Data Engineer / Analyst</span><span class="bar__t"><span style="--w:10%"></span></span><span class="bar__v">10%</span></div>
+        </div>
+        <figure class="out__img cut shutter spot"><img src="assets/img/outcome.jpg" alt="Hackathon participants taking a group selfie" class="spot__base" loading="lazy" /><img src="assets/img/outcome.jpg" alt="" class="spot__color" aria-hidden="true" loading="lazy" /></figure>
+      </div>
+      <div class="mentors">
+        <div class="mrow"><span class="mrow__id">M-01</span><span class="mrow__name">Karthik V.</span><span class="mrow__role">Lead, Full-Stack</span><span class="mrow__exp">12 yrs · payments infra</span><span class="mrow__go">↗</span></div>
+        <div class="mrow"><span class="mrow__id">M-02</span><span class="mrow__name">Divya N.</span><span class="mrow__role">Lead, AI Engineering</span><span class="mrow__exp">9 yrs · applied ML</span><span class="mrow__go">↗</span></div>
+        <div class="mrow"><span class="mrow__id">M-03</span><span class="mrow__name">Imran S.</span><span class="mrow__role">Lead, Cybersecurity</span><span class="mrow__exp">11 yrs · red team</span><span class="mrow__go">↗</span></div>
+        <div class="mrow"><span class="mrow__id">M-04</span><span class="mrow__name">Leela P.</span><span class="mrow__role">Lead, Cloud &amp; SRE</span><span class="mrow__exp">10 yrs · platform eng</span><span class="mrow__go">↗</span></div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="sec faq" id="faq">
+      <div class="sec__head">
+        <span class="sec__idx">§05</span>
+        <h2>Questions<br /><span class="outline">answered.</span></h2>
+      </div>
+      <div class="qa">
+        <details class="q"><summary><span>Q.01</span>Do I need to know how to code?</summary><p>For Full-Stack, Data and XR — no. For AI Engineering and Cloud we run a free 2-week bridge course first. Cybersecurity needs basic Linux comfort.</p></details>
+        <details class="q"><summary><span>Q.02</span>What's the weekly time commitment?</summary><p>On-site tracks run Mon–Fri, 10:00–17:00. Weekend and live tracks need about 15–18 hours a week.</p></details>
+        <details class="q"><summary><span>Q.03</span>Is there an entrance test?</summary><p>A 40-minute logic assessment plus a short conversation with a mentor. It's about fit and motivation, not prior knowledge.</p></details>
+        <details class="q"><summary><span>Q.04</span>How does placement support work?</summary><p>After your capstone, the career desk runs mock interview loops and refers you to partner companies until you sign. We don't guarantee jobs.</p></details>
+        <details class="q"><summary><span>Q.05</span>Can I pay in instalments?</summary><p>Yes — zero-cost EMI for up to 12 months and an income-share option on select tracks, subject to approval.</p></details>
+      </div>
+    </section>
+
+    <!-- ===== APPLY ===== -->
+    <section class="apply" id="apply">
+      <div class="apply__panel">
+        <div class="apply__copy">
+          <span class="tag tag--ink">[ INTAKE 01/27 · APPLICATIONS OPEN ]</span>
+          <h2>Apply<br />in 90<br />seconds.</h2>
+          <p>We'll call you within one working day to book your assessment and a lab tour.</p>
+        </div>
+        <form class="tform" id="applyForm" novalidate>
+          <label class="tf"><span>01 / NAME</span><input id="fName" type="text" placeholder="Your full name" required autocomplete="name" /></label>
+          <label class="tf"><span>02 / MOBILE</span><input id="fPhone" type="tel" placeholder="10-digit number" required inputmode="numeric" autocomplete="tel" /></label>
+          <label class="tf"><span>03 / EMAIL</span><input id="fEmail" type="email" placeholder="you@domain.com" autocomplete="email" /></label>
+          <label class="tf"><span>04 / TRACK</span>
+            <select id="fTrack" required>
+              <option value="">Select a program</option>
+              <option>Full-Stack Engineering</option><option>AI Engineering</option><option>Cybersecurity Ops</option><option>Cloud &amp; SRE</option><option>Data Engineering</option><option>XR &amp; Creative Tech</option>
+            </select>
+          </label>
+          <button type="submit" class="btn btn--ink">Submit application <span>→</span></button>
+          <p class="tform__msg" id="formMsg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ftr">
+    <div class="ftr__grid">
+      <div><a href="#top" class="hdr__logo"><span class="mark">V/</span>VECTR</a><p>Applied Tech Academy.<br />100 Feet Road, Indiranagar, Bengaluru 560038</p></div>
+      <div><h4>Programs</h4><a href="#programs">Full-Stack</a><a href="#programs">AI Engineering</a><a href="#programs">Cybersecurity</a><a href="#programs">Cloud &amp; SRE</a></div>
+      <div><h4>Academy</h4><a href="#curriculum">Curriculum</a><a href="#lab">The Lab</a><a href="#outcomes">Outcomes</a><a href="#faq">FAQ</a></div>
+      <div><h4>Contact</h4><a href="tel:+919100000000">+91 91000 00000</a><a href="mailto:admissions@vectr.academy">admissions@vectr.academy</a><a href="CREDITS.md">Photo credits</a></div>
+    </div>
+    <div class="ftr__mega" aria-hidden="true">VECTR</div>
+    <div class="ftr__base"><span>© <span id="year"></span> VECTR Applied Tech Academy</span><span>*Indicative figures; terms apply.</span><span>12.9716°N 77.6412°E</span></div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
